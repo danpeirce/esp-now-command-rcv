@@ -1,5 +1,12 @@
 /*
   ESP-NOW Demo - Receive
+  esp-now-control-rcv.ino
+  
+  modified by Dan Peirce B.Sc.  2023
+  Conrtols RGB LED on ESP32-S2-DevKitC-1 using ESP-Now
+
+  Modified from
+  ESP-NOW Demo - Receive
   esp-now-demo-rcv.ino
   Reads data from Initiator
   
@@ -92,7 +99,7 @@ void command_tree(char command) {
     gpix = RGB_BRIGHTNESS;
     bpix = 0;
     Serial.println(F("Turn LED Yellow\n"));
-    } else if (command == 'p') {
+  } else if (command == 'p') {
     rpix= RGB_BRIGHTNESS;
     gpix = 0;
     bpix = RGB_BRIGHTNESS;
