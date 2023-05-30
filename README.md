@@ -1,7 +1,12 @@
 # esp-now-control-rcv
 
-The purpose of the modified sketch for receiving the control
-information and adjusting the color and brightness of the RGB LED built onto an ESP-32 board.
+The purpose of this modified example sketch is control of the RGB LED built onto an ESP-32 board from a remote ESP32 board. Both the 
+colour and the brightness of the LED are controlled.
+
+* The transmitting ESP32 is connected to a computer running a terminal program such as PuTTY or CoolTerm. 
+* A single letter typed into the terminal window or the transmitting ESP32 acts as a command for the receiving ESP32.
+* In this example the MAC address of the receiving ESP32 is coded into esp-now-control-xmit.ino programed into the transmitting ESP32.
+* The two boards communicate via WiFi modules built into ESP32 the boards.
 
 In exploring the use of ESP NOW on a ESP32-S2-DEVKITC-1 board I found a simple example at 
 
